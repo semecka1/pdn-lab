@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ПДн: интерактивный ввод",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "module": "pdn_lab",
+            "args": ["predict", "--interactive"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ПДн: готовый пример",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "module": "pdn_lab",
+            "args": ["predict", "--file", "${workspaceFolder}/examples/demo.txt"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "justMyCode": true
+        },
+        {
+            "name": "ПДн: контекст имён (v3)",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "module": "pdn_lab",
+            "args": ["predict", "--file", "${workspaceFolder}/examples/context_v3.txt"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "justMyCode": true
+        },
+        {
+            "name": "ПДн: проверка качества",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "module": "pdn_lab",
+            "args": ["evaluate", "--split", "test", "--output", "${workspaceFolder}/reports/vscode-check.json", "--overwrite-report"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "justMyCode": true
+        }
+    ]
+}
