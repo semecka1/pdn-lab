@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-10-22T18:35:57.364069+00:00",
+  "texts": 176,
+  "categories": {
+    "animal_lev": 16,
+    "human_lev": 16,
+    "quoted_nonperson_titles": 16,
+    "explicit_nonperson_roles": 16,
+    "people_next_to_titles": 16,
+    "compound_surnames": 16,
+    "compound_declension": 16,
+    "quoted_people": 16,
+    "sentence_and_role_boundaries": 16,
+    "negative_hyphens": 16,
+    "scope_boundary_counterexamples": 16
+  },
+  "cases_sha256": "32a4b3cc5232ce3a29a64c0a433e5df76ecb686bfbc06a18cb168c822f585c14",
+  "annotation": "Manually authored positive spans in SOURCE_CASES; no model or predictions are read.",
+  "purpose": "Prospective regression challenge fixed before v3 contextual corrections; never training or validation for epoch selection.",
+  "semantic_policy": [
+    "Names of companies, brands, product models, files and variables explicitly denote non-person referents and have no name-component labels.",
+    "References to real people in ordinary or nested quotations remain positive, including authors of books and quotations.",
+    "Lion as an explicitly described animal is negative; a person named Lev is positive, including declined forms.",
+    "Whole hyphenated surname is one SURNAME; initials include their abbreviation period."
+  ],
+  "limitations": [
+    "176 hand-written adversarial texts emphasize selected phenomena; not a representative random sample of Russian documents.",
+    "Unqualified strings such as Lev or Ivanov with no referent context are omitted as ambiguous.",
+    "No statistical independence is claimed for shared name vocabulary or contextual constructions; texts must remain frozen after inspection."
+  ]
+}
