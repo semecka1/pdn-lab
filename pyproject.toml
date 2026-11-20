@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdn-lab1"
+version = "4.0.0"
+description = "Распознавание и синонимическое обезличивание русскоязычных текстов"
+requires-python = ">=3.11,<3.14"
+dependencies = ["Faker==37.6.0", "scikit-learn==1.7.2", "numpy==2.2.6", "email-validator==2.3.0", "phonenumbers==9.0.17", "pymorphy3==2.0.6", "pymorphy3-dicts-ru==2.4.417150.4580142"]
+
+[project.optional-dependencies]
+model = ["torch==2.9.1", "transformers==4.57.1"]
+dev = ["pytest==8.4.2"]
+evaluation = ["bert-score==0.3.13", "torch==2.9.1", "transformers==4.57.1"]
+
+[project.scripts]
+pdn-lab = "pdn_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pdn_lab = ["resources/*.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

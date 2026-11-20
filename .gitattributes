@@ -1,0 +1,7 @@
+# Preserve exact character offsets in examples across Windows/Linux clones.
+* text=auto eol=lf
+# This maintained fixture has a frozen SHA-256; keep its original bytes.
+data/context-v3/cases.jsonl -text whitespace=cr-at-eol
+*.zip binary
+*.gz binary
+*.safetensors binary
