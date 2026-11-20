@@ -1,0 +1,19 @@
+{
+  "repository": "casinocool/pdn-lab1",
+  "release_tag": "v3.0.0",
+  "url": "https://github.com/casinocool/pdn-lab1/releases/download/v3.0.0/rubert-pdn-v2.zip",
+  "archive_root": "rubert-pdn-v2",
+  "archive_bytes": 661079255,
+  "archive_sha256": "244bd8efb7066334fbe071a548409a987949f3bc268e6da6c2375e2fbf19ef68",
+  "files": {
+    "config.json": "8417f9cc7906f65a479b03e0b04cab012a4aa597aa0bc7b1242a5e1e60a1771e",
+    "model.safetensors": "94afcd497fae476d1dc6781d0554e08146ce75f28580ba5dcf84554e3626f809",
+    "special_tokens_map.json": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140",
+    "tokenizer.json": "eb3b1f806f521120a2011119af612ab80d299e2cc4990b96dd010c5ae423339b",
+    "tokenizer_config.json": "5bdcd6e3e10413d6bc33d2cf478be9ab6968fe81748ee4237d5c69f8f1a6312c",
+    "training_manifest.json": "5190a937a97fd5994b43919346173c3469a5f2b6d916b7a2bee40076959d2019",
+    "vocab.txt": "78106a3d3ae8600d1ba573b967b9bb731d2c2282957cbc6e26ab20935c3da02b"
+  },
+  "base_model": "DeepPavlov/rubert-base-cased",
+  "base_model_revision": "4036cab694767a299f2b9e6492909664d9414229"
+}

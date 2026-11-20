@@ -1,0 +1,8 @@
+{
+  "model_dir": "models/rubert-pdn-v2",
+  "data_dir": "data/hard-v2",
+  "version": 3,
+  "model_version": 2,
+  "detector_version": 3,
+  "selection": "Готовая модель v2 из Release; контекстная обработка v3."
+}
